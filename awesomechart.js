@@ -14,6 +14,10 @@
 *   limitations under the License.
 */
 
+
+module.exports = AwesomeChart;
+
+
 Array.prototype.numericSortReverse = function(data){
     this.sort(function(a, b){
         return data[b] - data[a];
@@ -42,7 +46,7 @@ Array.prototype.min = function() {
     return min;
 }
 
-function AwesomeChart(canvasElementId){
+var AwesomeChart = function(canvasElementId){
     var canvas = (typeof canvasElementId === 'string') ? document.getElementById(canvasElementId) : canvasElementId;
     this.ctx = canvas.getContext('2d');
     this.width = this.ctx.canvas.width;
@@ -1389,3 +1393,5 @@ function AwesomeChart(canvasElementId){
     
 }
 
+
+module.exports = AwesomeChart;
