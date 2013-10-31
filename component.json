@@ -1,0 +1,16 @@
+{
+  "name": "AwesomeChartJS",
+  "repo": "tm2/AwesomeChartJS",
+  "description": "TM2 AwesomeChartJS Component",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+
+    },
+  "development": {},
+  "license": "MIT",
+  "main": "awesomechart.js",
+  "scripts": [
+    "awesomechart.js"
+  ]
+}
