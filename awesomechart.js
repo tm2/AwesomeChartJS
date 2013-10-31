@@ -366,10 +366,10 @@ function AwesomeChart(canvasElementId){
             context.textAlign = 'center';
             if(di>=0){
                 context.textBaseline = 'bottom';
-                context.fillText(di, x + barWidth/2, barBottomY - barHeight - this.labelMargin - this.dataValueMargin, barWidth);
+                context.fillText(di + "%", x + barWidth/2, barBottomY - barHeight - this.labelMargin - this.dataValueMargin, barWidth);
             }else{
                 context.textBaseline = 'top';
-                context.fillText(di, x + barWidth/2, barBottomY - barHeight + this.labelMargin + this.dataValueMargin, barWidth);
+                context.fillText(di + "%", x + barWidth/2, barBottomY - barHeight + this.labelMargin + this.dataValueMargin, barWidth);
             }
             
             
@@ -593,10 +593,10 @@ function AwesomeChart(canvasElementId){
             context.textBaseline = 'bottom';
             if(di>=0){
                 context.textAlign = 'left';
-                context.fillText(di, this.labelMargin, 0);
+                context.fillText(di + "%", this.labelMargin, 0);
             }else{
                 context.textAlign = 'right';
-                context.fillText(di, -this.labelMargin, 0);
+                context.fillText(di + "%", -this.labelMargin, 0);
             }
             
             context.restore();
